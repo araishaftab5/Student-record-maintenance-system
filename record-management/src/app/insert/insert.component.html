@@ -1,0 +1,26 @@
+<div class="form">
+    <form [formGroup]="regForm" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form">
+        <div class="d">
+        <h1 class="heading-form">Enter the details</h1>
+        <div><label for="First-Name" class="field-label">Full name <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="nameFormControl" class="f" type="text" name="name"></div>
+        <div><label for="email" class="field-label">Email <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="emailFormControl" class="f" type="text" ></div>
+        <div><label for="batch" class="field-label">Batch <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="batchFormControl" class="f" type="text"></div>
+            <div><label for="batch" class="field-label">Branch <span class="red-star"><b>*</b></span></label>
+                <br>
+                <input formControlName="branchFormControl" class="f" type="text"></div>
+                <div><label for="batch" class="field-label">Contact <span class="red-star"><b>*</b></span></label>
+                    <br>
+                    <input formControlName="contactFormControl" class="f" type="text"></div>
+            <button type="button" class="button-form" (click)="registerNow()">Submit</button>
+            <button type="button" class="button-form" (click)="view()">View Data</button>
+        </div>
+        </form>
+      
+        </div>
+

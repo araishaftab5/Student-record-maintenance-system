@@ -1,0 +1,29 @@
+<h1 class="heading-name">Welcome, {{name}}</h1>
+<h2 class="heading-courses">The list of your courses are: </h2>
+<table class="table table-striped">
+   
+    <div class="d">
+      
+    <thead>
+        <tr>
+            <th scope="col" class="nm">Course ID</th>
+            <th scope="col" class="nm">Course Name</th>
+            <th scope="col" class="nm">Credits</th>
+            <th scope="col" class="nm">Grades</th>
+            
+        </tr>
+    </thead>
+    <tbody class="head">
+
+        <tr *ngFor="let obj of course;let indexOfelement=index;">
+
+            <td class="data">{{obj.courseid}}</td>
+            <td class="data">{{obj.coursename}}</td>
+            <td class="data">{{obj.credits}}</td>
+            <td class="data">
+            {{gradeone[indexOfelement]}}
+            </td>
+        </tr>
+    </tbody>
+    </div>
+</table>

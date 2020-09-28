@@ -1,0 +1,36 @@
+<h1 class="heading-table">Student Details</h1>
+
+<table class="table table-striped">
+   
+    <div class="d">
+      
+    <thead>
+        <tr>
+            <th scope="col" class="nm">Name</th>
+            <th scope="col" class="nm">Email</th>
+            <th scope="col" class="nm">Batch</th>
+            <th scope="col" class="nm">Branch</th>
+            <th scope="col" class="nm">Contact</th>
+            <th class="nm">Action</th>
+        </tr>
+    </thead>
+    <tbody class="head">
+
+        <tr *ngFor="let obj of dataArr">
+
+            <td class="data">{{obj.name}}</td>
+            <td class="data">{{obj.email}}</td>
+            <td class="data">{{obj.batch}}</td>
+            <td class="data">{{obj.branch}}</td>
+            <td class="data">{{obj.contact}}</td>
+            <td><button class="btn btn-delete" (click)="deleteData(obj.id)">Delete</button>
+                <button class="btn btn-insert mx-2" routerLink="update/{{obj.id}}">Edit</button>
+                <button class="btn btn-insert mx-2" routerLink="show/{{obj.id}}">View details</button>
+            </td>
+        </tr>
+    </tbody>
+   
+    </div>
+  
+</table>
+<button class="btn-ins" (click)="add()">Insert a new student record</button>

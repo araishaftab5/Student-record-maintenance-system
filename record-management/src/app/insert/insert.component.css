@@ -1,0 +1,44 @@
+.form {
+  
+    display: grid;
+    margin-left:250px;
+    margin-right:250px;
+    margin-top: 70px;
+    padding:40px;
+    padding-right:0px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;    
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #fff;
+    box-shadow: 1px 1px 19px 0 #000;
+    
+  }
+.red-star{
+    color: red;
+  }
+  .field-label{
+      color:#04aec9;
+      font-size:24px
+
+    }
+    .heading-form{
+        color:#04aec9;
+        font-size:30px;
+    }
+    .button-form{
+        padding:10px;
+        background-color:#04aec9;
+        color:white;
+        margin-right:50px
+    }
+    .d{
+        margin-left: 300px;
+        width:500px;
+        overflow-y: auto;
+    }
+    .f{
+        margin-top:10px;
+        margin-bottom:10px;
+        width:300px;
+        height:30px
+    }
