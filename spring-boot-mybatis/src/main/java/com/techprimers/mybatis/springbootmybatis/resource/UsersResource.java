@@ -96,4 +96,14 @@ public class UsersResource {
 		//System.out.println("hye from get grades");
 		return courseMapper.getGrade(studentid,courseid);
 	}
+	@PostMapping("/addcourse")
+	public void add(@RequestBody Course course)
+	{
+		courseMapper.insert(course);	
+	}
+	@PostMapping("/addgrade")
+	public void add(@RequestBody Grade grade)
+	{
+		courseMapper.insertGrade(grade);	
+	}
 }
