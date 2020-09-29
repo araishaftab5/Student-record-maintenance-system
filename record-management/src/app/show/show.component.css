@@ -36,3 +36,14 @@
     margin-right:50px;
     text-align:center;
 }
+.btn-home{
+    padding:10px;
+    background-color:#04aec9;
+    color:white;
+    outline:none;
+    border-color:#04aec9;
+    text-align: center;
+    margin-top:30px;
+    margin-left:250px;
+    
+}

@@ -1,0 +1,21 @@
+<div class="form">
+    <form [formGroup]="regForm" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form">
+        <div class="d">
+        <h1 class="heading-form">Enter the course details</h1>
+        <div><label for="Course-Name" class="field-label">Course name <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="coursenameFormControl" class="f" type="text" name="name"></div>
+        <div><label for="branch" class="field-label">Branch <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="branchFormControl" class="f" type="text" ></div>
+        <div><label for="credits" class="field-label">Credits <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="creditsFormControl" class="f" type="text"></div>
+          
+            <button type="button" class="button-form" (click)="addNow()">Submit</button>
+            <button type="button" class="button-form" (click)="view()">View Data</button>
+        </div>
+        </form>
+      
+        </div>
+

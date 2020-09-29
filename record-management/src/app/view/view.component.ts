@@ -29,6 +29,12 @@ this.userservice.getData().subscribe(res=>{
   add(){
     this.router.navigate(['/insert']);
   }
+  addcourse(){
+    this.router.navigate(['/addcourse']);
+  }
+  addgrade(){
+    this.router.navigate(['/addgrade']);
+  }
   
 
 }

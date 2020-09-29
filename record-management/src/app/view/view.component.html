@@ -1,7 +1,7 @@
 <h1 class="heading-table">Student Details</h1>
 
 <table class="table table-striped">
-   
+   <div class="parent">
     <div class="d">
       
     <thead>
@@ -31,6 +31,10 @@
     </tbody>
    
     </div>
-  
+   </div>
 </table>
-<button class="btn-ins" (click)="add()">Insert a new student record</button>
+<div class="btns">
+<button class="btn-ins ins1" (click)="add()">Insert a new student record</button>
+<button class="btn-ins ins2" (click)="addcourse()">Insert a new course</button>
+<button class="btn-ins ins3" (click)="addgrade()">Insert grades</button>
+</div>

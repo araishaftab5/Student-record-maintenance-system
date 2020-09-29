@@ -1,0 +1,20 @@
+<div class="form">
+    <form [formGroup]="regForm" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form">
+        <div class="d">
+        <h1 class="heading-form">Enter the grades</h1>
+        <div><label for="Student-ID" class="field-label">Student ID <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="studentidFormControl" class="f" type="text" name="name"></div>
+        <div><label for="course-id" class="field-label">Course ID <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="courseidFormControl" class="f" type="text" ></div>
+        <div><label for="grade" class="field-label">Grade <span class="red-star"><b>*</b></span></label>
+            <br>
+            <input formControlName="gradeFormControl" class="f" type="text"></div>
+          
+            <button type="button" class="button-form" (click)="addNow()">Submit</button>
+            <button type="button" class="button-form" (click)="view()">View Data</button>
+        </div>
+        </form>
+      
+        </div>

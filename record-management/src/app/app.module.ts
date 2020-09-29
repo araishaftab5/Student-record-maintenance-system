@@ -10,13 +10,17 @@ import {UsersService} from './users.service';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShowComponent } from './show/show.component';
+import { CourseinsertComponent } from './courseinsert/courseinsert.component';
+import { GradeinsertComponent } from './gradeinsert/gradeinsert.component';
 @NgModule({
   declarations: [
     AppComponent,
     ViewComponent,
     InsertComponent,
     UpdateComponent,
-    ShowComponent
+    ShowComponent,
+    CourseinsertComponent,
+    GradeinsertComponent
   ],
   imports: [
     BrowserModule,

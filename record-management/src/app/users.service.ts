@@ -31,4 +31,10 @@ export class UsersService {
   
   return this.http.get('http://localhost:8080/rest/users/grades/'+id+'/'+courseid);
   } 
+  public addCourse(course){
+  return this.http.post("http://localhost:8080/rest/users/addcourse",course);
+  }
+  public addGrade(grade){
+    return this.http.post("http://localhost:8080/rest/users/addgrade",grade);
+    }
 }

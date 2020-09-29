@@ -13,12 +13,24 @@
     box-shadow: 1px 1px 19px 0 #000;
     height:400px
   }
-  .d{
-      margin-left:150px;
+  
+  .parent{
+    width: 900px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.d{
+    margin-left:100px;
       width:900px;
-      overflow-y:auto;
-      
-  }
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  
+    overflow-y: scroll;
+}
   .heading-table{
       color:#04aec9;
 font-size:30px;
@@ -42,7 +54,8 @@ text-align:center;
     border-color:#04aec9;
     text-align: center;
     margin-top:30px;
-    margin-left:250px
+    margin-left:30px;
+    
 }
 .btn-delete{
     padding:10px;
@@ -63,3 +76,7 @@ text-align:center;
 .head{
     margin-top: 40px;;
 }
+.ins1{
+margin-left:500px;
+}
+
