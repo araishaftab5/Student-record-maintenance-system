@@ -17,10 +17,10 @@
                 <div><label for="batch" class="field-label">Contact <span class="red-star"><b>*</b></span></label>
                     <br>
                     <input formControlName="contactFormControl" class="f" type="text"></div>
-            <button type="button" class="button-form" (click)="registerNow()">Submit</button>
+            <button [disabled]="regForm.invalid" type="button" class="button-form" (click)="registerNow()">Submit</button>
             <button type="button" class="button-form" (click)="view()">View Data</button>
         </div>
         </form>
-      
+
         </div>
 

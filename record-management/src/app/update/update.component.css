@@ -1,5 +1,5 @@
 .form {
-  
+
     display: grid;
     margin-left:250px;
     margin-right:250px;
@@ -7,11 +7,11 @@
     padding:40px;
     padding-right:0px;
     grid-column-gap: 20px;
-    grid-row-gap: 20px;    
+    grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #fff;
     box-shadow: 1px 1px 19px 0 #000;
-    
+
   }
 .red-star{
     color: red;
@@ -41,4 +41,7 @@
         margin-bottom:10px;
         width:300px;
         height:30px
+    }
+    input.ng-invalid{
+      border: 1px solid red;
     }

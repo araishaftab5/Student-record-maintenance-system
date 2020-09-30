@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users.service';
-import {FormGroup,FormControl} from '@angular/forms'; 
+import {Validators,FormBuilder,FormGroup,FormControl} from '@angular/forms';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-insert',
   templateUrl: './insert.component.html',
@@ -9,17 +10,24 @@ import { Router } from '@angular/router';
 })
 export class InsertComponent implements OnInit {
 
-  regForm = new FormGroup({
-    nameFormControl: new FormControl(''),
-    emailFormControl: new FormControl(''),
-    batchFormControl: new FormControl(''),
-    branchFormControl: new FormControl(''),
-    contactFormControl: new FormControl('')
-     });
+  // regForm = new FormGroup({
+  //   nameFormControl: new FormControl(''),
+  //   emailFormControl: new FormControl(''),
+  //   batchFormControl: new FormControl(''),
+  //   branchFormControl: new FormControl(''),
+  //   contactFormControl: new FormControl('')
+  //    });
   message:any;
-  constructor(private service:UsersService,private router:Router) { }
-
+  constructor(private service:UsersService,private router:Router, private formBuilder:FormBuilder) { }
+regForm: FormGroup;
   ngOnInit(): void {
+    this.regForm=this.formBuilder.group({
+      nameFormControl:['',Validators.required],
+      emailFormControl: ['',Validators.required],
+      batchFormControl:['',Validators.required],
+      branchFormControl:['',Validators.required],
+      contactFormControl: ['',Validators.required]
+    })
   }
 
 public registerNow(){

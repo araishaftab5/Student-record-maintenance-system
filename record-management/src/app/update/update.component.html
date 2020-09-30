@@ -1,36 +1,36 @@
 
         <div class="form">
-            <form>
+            <form #userForm="ngForm" >
                 <div class="d">
                     <h1 class="heading-form">Update the details</h1>
         <div class="form-group">
             <label class="field-label">Name</label>
             <br>
-            <input type="text" class="form-control f" name="name" [(ngModel)]="user.name">
+            <input type="text" class="form-control f" name="name" [(ngModel)]="user.name" required>
         </div>
         <div class="form-group">
             <label class="field-label">Email</label>
             <br>
-            <input type="text" class="form-control f" name="email" [(ngModel)]="user.email">
+            <input type="text" class="form-control f" name="email" [(ngModel)]="user.email" required>
         </div>
         <div class="form-group">
             <label class="field-label">Batch</label>
             <br>
-            <input type="text" class="form-control f" name="batch" [(ngModel)]="user.batch">
+            <input type="text" class="form-control f" name="batch" [(ngModel)]="user.batch" required>
         </div>
         <div class="form-group">
             <label class="field-label">Branch</label>
             <br>
-            <input type="text" class="form-control f" name="branch" [(ngModel)]="user.branch">
+            <input type="text" class="form-control f" name="branch" [(ngModel)]="user.branch" required>
         </div>
         <div class="form-group">
             <label class="field-label">Contact</label>
             <br>
-            <input type="text" class="form-control f" name="contact" [(ngModel)]="user.contact">
+            <input type="text" class="form-control f" name="contact" [(ngModel)]="user.contact" required>
         </div>
 
-        <button type="button" class="button-form" (click)="update()">Update</button>
+        <button [disabled]="userForm.invalid" type="button" class="button-form" (click)="update()">Update</button>
             <button type="button" class="button-form" (click)="view()">View Data</button>
-                </div>  
+                </div>
         </form>
             </div>
